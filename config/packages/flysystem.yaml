@@ -1,0 +1,12 @@
+# Read the documentation at https://github.com/thephpleague/flysystem-bundle/blob/master/docs/1-getting-started.md
+flysystem:
+    storages:
+        default.storage:
+            adapter: 'local'
+            options:
+                directory: '%kernel.project_dir%/var/storage/default'
+        scaleway.storage:
+            adapter: 'asyncaws'
+            options:
+                client: 'scaleway_spaces_client'
+                bucket: '%env(SCALEWAY_SPACES_BUCKET)%'

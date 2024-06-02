@@ -7,14 +7,18 @@
         "php": ">=8.2",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "league/flysystem-async-aws-s3": "^3.28",
+        "league/flysystem-bundle": "^3.3",
         "symfony/console": "7.1.*",
         "symfony/dotenv": "7.1.*",
         "symfony/flex": "^2",
         "symfony/framework-bundle": "7.1.*",
+        "symfony/monolog-bundle": "^3.10",
         "symfony/runtime": "7.1.*",
         "symfony/yaml": "7.1.*"
     },
     "require-dev": {
+        "symfony/maker-bundle": "^1.59"
     },
     "config": {
         "allow-plugins": {
